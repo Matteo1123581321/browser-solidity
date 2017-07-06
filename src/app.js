@@ -645,8 +645,8 @@ var run = function () {
     editor.resize(document.querySelector('#editorWrap').checked)
     reAdjust()
 
-    var rhpEvents_str = JSON.stringify(rhpEvents, null, 2)
-    modalDialogAlert('This is the h2 of the alert!', 'This is the content area - it would be good to print out something here that is pretty long for example: ' + rhpEvents_str)
+    var rhpEventsStr = JSON.stringify(rhpEvents, null, 2)
+    modalDialogAlert('This is the h2 of the alert!', 'This is the content area - it would be good to print out something here that is pretty long for example:  ' + rhpEventsStr)
   }
   window.onresize = onResize
   onResize()
