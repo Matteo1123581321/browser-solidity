@@ -757,9 +757,8 @@ var run = function () {
           switchToFile(source)
         }
         this.statementMarker = editor.addMarker(lineColumnPos, 'highlightcode')
-        
-        editor.scrollToLine(lineColumnPos.start.line, true, true, function () {})
 
+        editor.gotoLine(lineColumnPos.start.line, lineColumnPos.start.column)
         if (lineColumnPos.start.line === lineColumnPos.end.line) {
           this.fullLineMarker = editor.addMarker({
             start: {
