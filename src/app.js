@@ -646,7 +646,7 @@ var run = function () {
     reAdjust()
 
     var rhpEventsStr = JSON.stringify(rhpEvents, null, 2)
-    modalDialogAlert('This is the content area - it would be good to print out something here that is pretty long for example:  ' + rhpEventsStr,'The title - probably will be rarely used')
+    modalDialogAlert('In line 649 of app.js. I am calling the content and then the title because I think the title will rarely be used.  And here is a var getting printed:  ' + rhpEventsStr,'The title - probably will be rarely used')
   }
   window.onresize = onResize
   onResize()
